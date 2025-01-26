@@ -2,6 +2,6 @@ import React from 'react'
 
 export const Navbar = () => {
   return (
-    <div>Navbar wdwedfwefhjvchgcvweqfewfgewfdqw</div>
+    <div>Navbar wdwe5tfydfwefhjvchgcvweqfewfgewfdqw</div>
   )
 }
