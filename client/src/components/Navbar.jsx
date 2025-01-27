@@ -16,7 +16,7 @@ export const Navbar = () => {
           <ul className="flex space-x-8">
             <li>
               <a 
-                href="#home" 
+                href="#about" 
                 className="px-3 py-2 hover:text-green-400 transition-colors duration-300 relative group"
               >
                 Hakkımda
@@ -25,7 +25,7 @@ export const Navbar = () => {
             </li>
             <li>
               <a 
-                href="#about" 
+                href="#projects" 
                 className="px-3 py-2 hover:text-green-400 transition-colors duration-300 relative group"
               >
                 Projelerim
