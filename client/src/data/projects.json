@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "name": "Proje 1",
+      "image": "images/indir.jpg",
+      "details": "Bu proje, modern teknolojilerle geliştirilmiş bir çözümdür."
+    },
+    {
+      "id": 2,
+      "name": "Proje 2",
+      "image": "../images/indir.jpeg",
+      "details": "Bu proje, kullanıcı dostu arayüzüyle öne çıkar."
+    },
+    {
+      "id": 3,
+      "name": "Proje 3",
+      "image": "../images/indir.jpeg",
+      "details": "Bu proje, yapay zeka ve makine öğrenmesi kullanır."
+    },
+    {
+      "id": 4,
+      "name": "Proje 4",
+      "image": "../images/indir.jpeg",
+      "details": "Bu proje, bulut tabanlı bir uygulamadır."
+    },
+    {
+      "id": 5,
+      "name": "Proje 5",
+      "image": "../images/indir.jpeg",
+      "details": "Bu proje, mobil uyumlu bir web sitesidir."
+    },
+    {
+      "id": 6,
+      "name": "Proje 6",
+      "image": "../images/indir.jpeg",
+      "details": "Bu proje, açık kaynak kodlu bir yazılımdır."
+    }
+  ]

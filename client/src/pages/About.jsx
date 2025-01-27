@@ -4,12 +4,13 @@ import { faLinkedin, faGithub, faTwitter } from '@fortawesome/free-brands-svg-ic
 
 const About = () => {
   return (
-    <section id="about" className="h-screen flex items-center overflow-y-auto py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-blue-50 to-indigo-50">
+    <section id="about" className="flex items-center py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-blue-50 to-indigo-50">
       <div className="max-w-7xl mx-auto">
         {/* Üst Başlık */}
         <div 
           data-aos="fade-down" 
           data-aos-delay="100"
+          data-aos-once="true" // Sadece bir kere çalışacak
           className="mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-blue-600 mb-4">
@@ -26,6 +27,7 @@ const About = () => {
           <div 
             data-aos="fade-right" 
             data-aos-delay="200"
+            data-aos-once="true" // Sadece bir kere çalışacak
             className="w-full lg:w-1/2 relative"
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl transform transition-transform duration-500 hover:scale-105">
@@ -42,10 +44,11 @@ const About = () => {
           <div 
             data-aos="fade-left" 
             data-aos-delay="300"
+            data-aos-once="true" // Sadece bir kere çalışacak
             className="w-full lg:w-1/2 space-y-6"
           >
             {/* Başlık */}
-            <div data-aos="zoom-in" data-aos-delay="400">
+            <div data-aos="zoom-in" data-aos-delay="400" data-aos-once="true">
               <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
                 Harun Dursun
               </h1>
@@ -58,6 +61,7 @@ const About = () => {
             <p 
               data-aos="fade-up" 
               data-aos-delay="500"
+              data-aos-once="true" // Sadece bir kere çalışacak
               className="text-gray-600 leading-relaxed"
             >
               harocan baba bir markadır. anlayana... 10 yıllık yazılım deneyimimle, 
@@ -77,7 +81,8 @@ const About = () => {
                 <li 
                   key={index}
                   data-aos="fade-up"
-                  data-aos-delay={600 + (index * 50)} // Daha hızlı sıralı
+                  data-aos-delay={600 + (index * 50)}
+                  data-aos-once="true" // Sadece bir kere çalışacak
                   className="flex items-center p-2 bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300"
                 >
                   <span className="text-blue-500 mr-2">▹</span>
@@ -86,7 +91,7 @@ const About = () => {
               ))}
             </ul>
 
-            {/* Sosyal Medya İkonları - En son ve yavaş gelecek */}
+            {/* Sosyal Medya İkonları */}
             <div className="flex space-x-4 pt-4">
               {[
                 { icon: faLinkedin, color: 'bg-blue-600', delay: 100 },
@@ -98,6 +103,7 @@ const About = () => {
                   href="#"
                   data-aos="zoom-in"
                   data-aos-delay={item.delay}
+                  data-aos-once="true" // Sadece bir kere çalışacak
                   className={`${item.color} w-10 h-10 rounded-full flex items-center justify-center text-white hover:scale-110 transition-transform shadow-md`}
                 >
                   <FontAwesomeIcon icon={item.icon} className="text-lg" />

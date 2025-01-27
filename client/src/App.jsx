@@ -2,9 +2,10 @@ import React, { useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Home from './pages/Home';
+
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Projects from './pages/Projects';
 
 const App = () => {
   useEffect(() => {
@@ -18,8 +19,8 @@ const App = () => {
   return (
     <div className="scroll-smooth">
       <Navbar />
-      <Home />
       <About />
+      <Projects/>
       <Contact />
     </div>
   );
