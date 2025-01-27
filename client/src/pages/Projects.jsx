@@ -30,7 +30,7 @@ const Projects = () => {
         <div className="absolute bottom-20 left-1/2 w-48 h-48 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"
           style={{ animationDelay: '4s' }}></div>
       </div>
-
+  
       {/* Proje Kutuları */}
       <div className="relative z-10 container mx-auto px-4">
         <motion.div
@@ -41,8 +41,8 @@ const Projects = () => {
         >
           <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Projelerim</h1>
           <p className="text-lg text-gray-600 mb-8">İşte son projelerimden bazıları.</p>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+  
+          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2">
             {projects.map((project) => (
               <a
                 key={project.id}
@@ -52,32 +52,24 @@ const Projects = () => {
               >
                 <motion.div
                   data-aos="fade-up"
+                  data-aos-once="true"
                   whileHover={{ scale: 1.02 }}
                   transition={{ type: "spring", stiffness: 200 }}
-                  className="relative rounded-xl overflow-hidden cursor-pointer group"
+                  className="relative rounded-xl overflow-hidden cursor-pointer group max-w-xs" 
                 >
                   {/* Ana Resim */}
-                  <div className="w-full aspect-square">
+                  <div className="w-full h-48 sm:h-64"> {/* Resim boyutunu küçült */}
                     <img
                       src={project.image}
                       alt={project.name}
                       className="w-full h-full object-cover"
                     />
                   </div>
-
+  
                   {/* Hover'da Görünen Detaylar */}
                   <div className="absolute inset-0 bg-black/70 backdrop-blur-sm flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
                     <h3 className="text-white text-xl font-bold mb-2">{project.name}</h3>
                     <p className="text-gray-200 text-center text-sm">{project.details}</p>
-
-                    {/* İsteğe Bağlı: Teknoloji İkonları */}
-                    <div className="flex gap-2 mt-4">
-                      {project.technologies?.map((tech, index) => (
-                        <span key={index} className="text-white text-2xl">
-                          {tech.icon}
-                        </span>
-                      ))}
-                    </div>
                   </div>
                 </motion.div>
               </a>
