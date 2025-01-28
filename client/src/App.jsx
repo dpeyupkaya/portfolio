@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { Navbar } from './components/Navbar';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -22,6 +24,7 @@ const App = () => {
       <About />
       <Projects/>
       <Contact />
+      <ToastContainer/>
     </div>
   );
 };
