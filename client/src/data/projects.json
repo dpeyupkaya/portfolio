@@ -2,30 +2,29 @@
   {
     "id": 1,
     "name": "ZEYTİN",
-    "image": "/images/proje1.jpg",
+    "image": "/images/rharocan.png",
     "details": "Bu proje, modern teknolojilerle geliştirilmiş bir çözümdür.",
     "githubLink": "https://github.com/kullanici/proje1"
   },
   {
     "id": 2,
     "name": "ZEYTİN",
-    "image": "../images/proje2.jpg",
+    "image": "/images/rharocan.png",
     "details": "Bu proje, kullanıcı dostu arayüzüyle öne çıkar.",
     "githubLink": "https://github.com/kullanici/proje2"
   },
   {
     "id": 3,
     "name": "ZEYTİN",
-    "image": "../images/proje3.jpg",
+    "image": "/images/rharocan.png",
     "details": "Bu proje, yapay zeka ve makine öğrenmesi kullanır.",
     "githubLink": "https://github.com/kullanici/proje3"
   },
   {
     "id": 4,
     "name": "ZEYTİN",
-    "image": "../images/proje4.jpg",
+    "image": "/images/rharocan.png",
     "details": "Bu proje, bulut tabanlı bir uygulamadır.",
     "githubLink": "https://github.com/kullanici/proje4"
   }
-  
 ]

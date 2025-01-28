@@ -1,84 +1,77 @@
-import React, { useEffect, useState } from 'react';
-import { motion } from 'framer-motion';
-import { FaCode } from 'react-icons/fa';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
-
-import projectsData from '../data/projects.json';
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import projectsData from '../data/projects.json'
 
 const Projects = () => {
-  const [projects, setProjects] = useState([]);
-
-  useEffect(() => {
-    // JSON'dan gelen verileri state'e aktarın
-    setProjects(projectsData);
-
-    // AOS'u başlatın
-    AOS.init({
-      duration: 1000,
-      once: true,
-    });
-  }, []);
-
   return (
-    <section id="projects" className="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-50 to-blue-50 relative overflow-hidden">
-      {/* Arkaplan Efektleri */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-20 left-20 w-48 h-48 bg-green-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"></div>
-        <div className="absolute top-40 right-32 w-48 h-48 bg-blue-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"
-          style={{ animationDelay: '2s' }}></div>
-        <div className="absolute bottom-20 left-1/2 w-48 h-48 bg-purple-200 rounded-full mix-blend-multiply filter blur-xl opacity-70 animate-blob"
-          style={{ animationDelay: '4s' }}></div>
-      </div>
-  
-      {/* Proje Kutuları */}
-      <div className="relative z-10 container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-center"
+    <section id="projects" className="py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-blue-50 to-indigo-50">
+      <div className="max-w-7xl mx-auto">
+        {/* Başlık */}
+        <div 
+          data-aos="fade-down" 
+          data-aos-delay="100"
+          data-aos-once="true"
+          className="mb-12 text-center"
         >
-          <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Projelerim</h1>
-          <p className="text-lg text-gray-600 mb-8">İşte son projelerimden bazıları.</p>
-  
-          <div className="grid grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-2">
-            {projects.map((project) => (
-              <a
-                key={project.id}
-                href={project.githubLink} // GitHub linki burada
-                target="_blank" // Yeni sekmede aç
-                rel="noopener noreferrer" // Güvenlik için
-              >
-                <motion.div
-                  data-aos="fade-up"
-                  data-aos-once="true"
-                  whileHover={{ scale: 1.02 }}
-                  transition={{ type: "spring", stiffness: 200 }}
-                  className="relative rounded-xl overflow-hidden cursor-pointer group max-w-xs" 
+          <h2 className="text-3xl md:text-4xl font-bold text-blue-600 mb-4">
+            Son Projelerim
+          </h2>
+          <p className="text-gray-600 text-lg">
+            Teknoloji ve inovasyonun sınırlarını zorlayan çalışmalar
+          </p>
+        </div>
+
+        {/* Proje Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {projectsData.map((project, index) => (
+            <div 
+              key={project.id}
+              data-aos="fade-up"
+              data-aos-delay={200 + (index * 100)}
+              data-aos-once="true"
+              className="group relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300"
+            >
+              {/* Resim ve Overlay */}
+              <div className="relative h-64">
+                <img 
+                  src={project.image}
+                  alt={project.name}
+                  className="w-full h-full object-cover transform transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 to-transparent" />
+              </div>
+
+              {/* İçerik */}
+              <div className="absolute inset-0 p-6 flex flex-col justify-end">
+                {/* Github Link */}
+                <a
+                  href={project.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="absolute top-4 right-4 w-10 h-10 bg-white/90 rounded-full flex items-center justify-center text-blue-600 hover:bg-white hover:text-blue-800 transition-colors shadow-lg"
                 >
-                  {/* Ana Resim */}
-                  <div className="w-full h-48 sm:h-64"> {/* Resim boyutunu küçült */}
-                    <img
-                      src={project.image}
-                      alt={project.name}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-  
-                  {/* Hover'da Görünen Detaylar */}
-                  <div className="absolute inset-0 bg-black/70 backdrop-blur-sm flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4">
-                    <h3 className="text-white text-xl font-bold mb-2">{project.name}</h3>
-                    <p className="text-gray-200 text-center text-sm">{project.details}</p>
-                  </div>
-                </motion.div>
-              </a>
-            ))}
-          </div>
-        </motion.div>
+                  <FontAwesomeIcon icon={faGithub} className="text-xl" />
+                </a>
+
+                {/* Proje Detayları */}
+                <div className="mb-3">
+                  <p className="text-white/90 text-sm leading-relaxed backdrop-blur-sm">
+                    {project.details}
+                  </p>
+                </div>
+
+                {/* Proje Başlığı */}
+                <h3 className="text-xl font-bold text-white mb-2">
+                  {project.name}
+                </h3>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects
