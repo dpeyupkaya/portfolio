@@ -14,7 +14,7 @@ const icon = L.icon({
 });
 
 function MapComponent() {
-  const position = [41.0082, 28.9784]; // İstanbul'un koordinatları
+  const position = [41.0082, 28.9784]; 
 
   return (
     <MapContainer

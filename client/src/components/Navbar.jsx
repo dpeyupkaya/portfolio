@@ -18,33 +18,43 @@ export const Navbar = () => {
             </span>
           </div>
 
-          {/* Sağ Taraf - Menü Linkleri (Büyük Ekranlar) */}
-          <ul className="hidden md:flex space-x-8">
+          <ul className="hidden md:flex space-x-8 bg-gradient-to-r  rounded-lg shadow-md">
             <li>
               <a
                 href="#about"
-                className="px-3 py-2 hover:text-green-400 transition-colors duration-300 relative group"
+                className="px-4 py-2 text-white-600 hover:text-green-600 transition-all duration-500 relative group"
               >
-                Hakkımda
-                <span className="absolute bottom-0 left-0 h-0.5 bg-green-400 w-0 group-hover:w-full transition-all duration-300"></span>
+                <span className="relative z-10">
+                  Hakkımda
+                  <span className="absolute -bottom-1 left-0 w-0 h-1 bg-gradient-to-r "></span>
+                </span>
+                <span className="absolute inset-0 rounded-lg bg-green-50 scale-0 group-hover:scale-100 transition-transform duration-300"></span>
               </a>
             </li>
+
             <li>
               <a
                 href="#projects"
-                className="px-3 py-2 hover:text-green-400 transition-colors duration-300 relative group"
+                className="px-4 py-2 text-white-600 hover:text-green-600 transition-all duration-500 relative group"
               >
-                Projelerim
-                <span className="absolute bottom-0 left-0 h-0.5 bg-green-400 w-0 group-hover:w-full transition-all duration-300"></span>
+                <span className="relative z-10">
+                  Projelerim
+                  <span className="absolute -bottom-1 left-1/2 w-0 h-1 bg-green-400 transition-all duration-400"></span>
+                </span>
+                <span className="absolute inset-0 rounded-lg bg-green-50 scale-0 group-hover:scale-100 transition-transform duration-300"></span>
               </a>
             </li>
+
             <li>
               <a
                 href="#contact"
-                className="px-3 py-2 hover:text-green-400 transition-colors duration-300 relative group"
+                className="px-4 py-2 text-white-600 hover:text-green-600 transition-all duration-500 relative group"
               >
-                İletişim
-                <span className="absolute bottom-0 left-0 h-0.5 bg-green-400 w-0 group-hover:w-full transition-all duration-300"></span>
+                <span className="relative z-10">
+                  İletişim
+                  <span className="absolute -bottom-1 left-0 w-full h-1 origin-left scale-x-0 "></span>
+                </span>
+                <span className="absolute inset-0 rounded-lg bg-green-50 scale-0 group-hover:scale-100 transition-transform duration-300"></span>
               </a>
             </li>
           </ul>

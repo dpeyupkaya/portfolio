@@ -96,27 +96,27 @@ export default function Contact() {
               </a>
 
               {/* Harita */}
-<div
-  data-aos="fade-up"
-  data-aos-delay="500"
-  data-aos-once="true"
-  className="p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300"
->
-  <div className="flex flex-col gap-4">
-    {/* Başlık ve İkon */}
-    <div className="flex items-center gap-3">
-      <div className="p-3 bg-blue-100 rounded-lg">
-        <FontAwesomeIcon icon={faMapMarkerAlt} className="text-blue-600 text-xl" />
-      </div>
-      <h3 className="font-bold text-gray-800 text-xl">Lokasyon</h3>
-    </div>
+              <div
+                data-aos="fade-up"
+                data-aos-delay="500"
+                data-aos-once="true"
+                className="p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300"
+              >
+                <div className="flex flex-col gap-4">
+                  {/* Başlık ve İkon */}
+                  <div className="flex items-center gap-3">
+                    <div className="p-3 bg-blue-100 rounded-lg">
+                      <FontAwesomeIcon icon={faMapMarkerAlt} className="text-blue-600 text-xl" />
+                    </div>
+                    <h3 className="font-bold text-gray-800 text-xl">Lokasyon</h3>
+                  </div>
 
-    {/* Harita Bileşeni */}
-    <div className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
-      <MapComponent className="w-full h-64 md:h-80" /> {/* Harita boyutunu ayarlayın */}
-    </div>
-  </div>
-</div>
+                  {/* Harita Bileşeni */}
+                  <div className="rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300">
+                    <MapComponent className="w-full h-64 md:h-80" /> {/* Harita boyutunu ayarlayın */}
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -127,7 +127,7 @@ export default function Contact() {
             data-aos-once="true"
             className="w-full lg:w-2/3 bg-white rounded-2xl p-8 shadow-xl"
           >
-            <form className="space-y-6">
+            <form className="space-y-6 bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-xl shadow-lg">
               {/* İsim */}
               <div
                 data-aos="fade-up"
@@ -135,14 +135,14 @@ export default function Contact() {
                 data-aos-once="true"
               >
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700">
-                  <i className="fas fa-user mr-2"></i>İsim
+                  <i className="fas fa-user mr-2 text-blue-500"></i>İsim
                 </label>
                 <input
                   type="text"
                   id="name"
                   name="name"
                   placeholder="Adınızı girin"
-                  className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300"
                   required
                 />
               </div>
@@ -154,14 +154,14 @@ export default function Contact() {
                 data-aos-once="true"
               >
                 <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                  <i className="fas fa-envelope mr-2"></i>E-posta
+                  <i className="fas fa-envelope mr-2 text-blue-500"></i>E-posta
                 </label>
                 <input
                   type="email"
                   id="email"
                   name="email"
                   placeholder="E-posta adresinizi girin"
-                  className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300"
                   required
                 />
               </div>
@@ -173,14 +173,14 @@ export default function Contact() {
                 data-aos-once="true"
               >
                 <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
-                  <i className="fas fa-phone mr-2"></i>Telefon
+                  <i className="fas fa-phone mr-2 text-blue-500"></i>Telefon
                 </label>
                 <input
                   type="tel"
                   id="tel"
                   name="tel"
                   placeholder="Telefon numaranızı girin"
-                  className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300"
                   required
                 />
               </div>
@@ -192,14 +192,14 @@ export default function Contact() {
                 data-aos-once="true"
               >
                 <label htmlFor="message" className="block text-sm font-medium text-gray-700">
-                  <i className="fas fa-comment-alt mr-2"></i>Mesaj
+                  <i className="fas fa-comment-alt mr-2 text-blue-500"></i>Mesaj
                 </label>
                 <textarea
                   id="message"
                   name="message"
                   rows="4"
                   placeholder="Mesajınızı yazın"
-                  className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+                  className="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300"
                   required
                 ></textarea>
               </div>
@@ -212,7 +212,7 @@ export default function Contact() {
               >
                 <button
                   type="submit"
-                  className="w-full px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2"
+                  className="w-full px-4 py-2 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 transition duration-300 transform hover:scale-105"
                 >
                   <i className="fas fa-paper-plane mr-2"></i>Gönder
                 </button>
