@@ -2,7 +2,6 @@ import React from 'react';
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import L from 'leaflet';
 
-// Marker ikonu için gerekli ayarlar
 const icon = L.icon({
   iconUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png',
   iconRetinaUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon-2x.png',
@@ -14,7 +13,7 @@ const icon = L.icon({
 });
 
 function MapComponent() {
-  const position = [41.0082, 28.9784]; 
+  const position = [39.5478, 44.0833]; 
 
   return (
     <MapContainer
@@ -28,10 +27,10 @@ function MapComponent() {
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
 
-      {/* Marker */}
+  
       <Marker position={position} icon={icon}>
         <Popup>
-          İstanbul, Türkiye
+          HARO BABBA
         </Popup>
       </Marker>
     </MapContainer>
