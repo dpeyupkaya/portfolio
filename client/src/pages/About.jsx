@@ -32,8 +32,8 @@ const About = () => {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl transform transition-transform duration-500 hover:scale-105">
               <img 
-                src="harun.jpg"
-                alt="Harun Dursun"
+                src="profl.jpg"
+                alt="Eyüp Kaya"
                 className="w-full h-auto object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 to-transparent" />
