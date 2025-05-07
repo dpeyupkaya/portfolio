@@ -78,7 +78,7 @@ export default function Contact() {
 
               {/* E-posta */}
               <a
-                href="mailto:iletisim@harocanbaba.com"
+                href="mailto:iletisim@example.com"
                 data-aos="fade-up"
                 data-aos-delay="400"
                 data-aos-once="true"
@@ -90,7 +90,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-bold text-gray-800">E-posta</h3>
-                    <p className="text-gray-600">iletisim@harocanbaba.com</p>
+                    <p className="text-gray-600">iletisim@example.com</p>
                   </div>
                 </div>
               </a>

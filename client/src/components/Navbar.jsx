@@ -1,11 +1,18 @@
 import React, { useState } from 'react';
 
+
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
+
+
+  
+
+
+
 
   return (
     <nav className="bg-gray-900 text-white fixed w-full top-0 shadow-xl z-1000">
@@ -14,7 +21,7 @@ export const Navbar = () => {
           {/* Sol Taraf - Logo */}
           <div className="flex-shrink-0">
             <span className="text-2xl font-bold bg-gradient-to-r from-green-400 to-blue-500 bg-clip-text text-transparent">
-              Ben Harun
+              Ben Eyüp
             </span>
           </div>
 
@@ -57,7 +64,11 @@ export const Navbar = () => {
                 <span className="absolute inset-0 rounded-lg bg-green-50 scale-0 group-hover:scale-100 transition-transform duration-300"></span>
               </a>
             </li>
+           
+
+
           </ul>
+
 
           {/* Mobil Menü Butonu */}
           <div className="md:hidden flex items-center">

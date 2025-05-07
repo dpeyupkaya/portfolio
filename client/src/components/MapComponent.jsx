@@ -13,7 +13,7 @@ const icon = L.icon({
 });
 
 function MapComponent() {
-  const position = [39.5478, 44.0833]; 
+  const position = [41.0082, 28.9784];
 
   return (
     <MapContainer
@@ -21,13 +21,16 @@ function MapComponent() {
       zoom={13}
       style={{ height: '300px', width: '300px', borderRadius: '15px' }}
     >
-    
+
       <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}
+"
+        attribution='&copy; <a href="https://carto.com/">CARTO</a>'
       />
 
-  
+
+
+
       <Marker position={position} icon={icon}>
         <Popup>
           HARO BABBA

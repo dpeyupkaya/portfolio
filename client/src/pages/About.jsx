@@ -17,7 +17,7 @@ const About = () => {
             Yaratıcı Teknoloji Uzmanı
           </h2>
           <p className="text-gray-600 text-lg">
-            Dijital dünyayı şekillendiren çözümler Haro baba'da!
+            Dijital dünyayı şekillendiren çözümler burada!
           </p>
         </div>
 
@@ -27,13 +27,13 @@ const About = () => {
           <div 
             data-aos="fade-right" 
             data-aos-delay="200"
-            data-aos-once="true" // Sadece bir kere çalışacak
+            data-aos-once="true" 
             className="w-full lg:w-1/2 relative"
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl transform transition-transform duration-500 hover:scale-105">
               <img 
-                src="profl.jpg"
-                alt="Eyüp Kaya"
+                src="example.jpg"
+                alt="Fotoğraf ekleyin"
                 className="w-full h-auto object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 to-transparent" />
@@ -44,13 +44,13 @@ const About = () => {
           <div 
             data-aos="fade-left" 
             data-aos-delay="300"
-            data-aos-once="true" // Sadece bir kere çalışacak
+            data-aos-once="true" 
             className="w-full lg:w-1/2 space-y-6"
           >
             {/* Başlık */}
             <div data-aos="zoom-in" data-aos-delay="400" data-aos-once="true">
               <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
-                Harun Dursun
+             Eyüp KAYA
               </h1>
               <p className="text-xl text-blue-600 font-medium">
                 Full Stack Geliştirici & AI Uzmanı
@@ -61,10 +61,10 @@ const About = () => {
             <p 
               data-aos="fade-up" 
               data-aos-delay="500"
-              data-aos-once="true" // Sadece bir kere çalışacak
+              data-aos-once="true" 
               className="text-gray-600 leading-relaxed"
             >
-              harocan baba bir markadır. anlayana... 10 yıllık yazılım deneyimimle, 
+              harocan baba bir markadır. anlayana... 5 yıllık yazılım deneyimimle, 
               yapay zeka ve siber güvenlik alanlarında uzmanlaşmış bir geliştiriciyim.
             </p>
 
