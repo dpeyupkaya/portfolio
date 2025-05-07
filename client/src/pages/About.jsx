@@ -50,7 +50,7 @@ const About = () => {
             {/* Başlık */}
             <div data-aos="zoom-in" data-aos-delay="400" data-aos-once="true">
               <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
-             Eyüp KAYA
+            ......
               </h1>
               <p className="text-xl text-blue-600 font-medium">
                 Full Stack Geliştirici & AI Uzmanı
