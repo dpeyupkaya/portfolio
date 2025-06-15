@@ -7,8 +7,8 @@ const About = () => {
     <section id="about" className="flex items-center py-20 px-6 md:px-12 lg:px-24 bg-gradient-to-br from-blue-50 to-indigo-50">
       <div className="max-w-7xl mx-auto">
         {/* Üst Başlık */}
-        <div 
-          data-aos="fade-down" 
+        <div
+          data-aos="fade-down"
           data-aos-delay="100"
           data-aos-once="true" // Sadece bir kere çalışacak
           className="mb-12"
@@ -24,14 +24,14 @@ const About = () => {
         {/* Ana İçerik */}
         <div className="flex flex-col lg:flex-row items-center gap-8">
           {/* Fotoğraf Bölümü */}
-          <div 
-            data-aos="fade-right" 
+          <div
+            data-aos="fade-right"
             data-aos-delay="200"
-            data-aos-once="true" 
+            data-aos-once="true"
             className="w-full lg:w-1/2 relative"
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl transform transition-transform duration-500 hover:scale-105">
-              <img 
+              <img
                 src="example.jpg"
                 alt="Fotoğraf ekleyin"
                 className="w-full h-auto object-cover"
@@ -41,16 +41,16 @@ const About = () => {
           </div>
 
           {/* Metin İçeriği */}
-          <div 
-            data-aos="fade-left" 
+          <div
+            data-aos="fade-left"
             data-aos-delay="300"
-            data-aos-once="true" 
+            data-aos-once="true"
             className="w-full lg:w-1/2 space-y-6"
           >
             {/* Başlık */}
             <div data-aos="zoom-in" data-aos-delay="400" data-aos-once="true">
               <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
-            ......
+                ......
               </h1>
               <p className="text-xl text-blue-600 font-medium">
                 Full Stack Geliştirici & AI Uzmanı
@@ -58,13 +58,13 @@ const About = () => {
             </div>
 
             {/* Açıklama */}
-            <p 
-              data-aos="fade-up" 
+            <p
+              data-aos="fade-up"
               data-aos-delay="500"
-              data-aos-once="true" 
+              data-aos-once="true"
               className="text-gray-600 leading-relaxed"
             >
-              harocan baba bir markadır. anlayana... 5 yıllık yazılım deneyimimle, 
+              5 yıllık yazılım deneyimimle,
               yapay zeka ve siber güvenlik alanlarında uzmanlaşmış bir geliştiriciyim.
             </p>
 
@@ -78,7 +78,7 @@ const About = () => {
                 "🌐 Cloud Çözümleri",
                 "🔒 Siber Güvenlik"
               ].map((item, index) => (
-                <li 
+                <li
                   key={index}
                   data-aos="fade-up"
                   data-aos-delay={600 + (index * 50)}
